@@ -3,7 +3,7 @@ import { FaStore , FaProductHunt, FaShoppingCart, FaRegStar, FaCogs } from 'reac
 
 const Header = () => {
   return (
-    <div className="bg-gray-800 p-4">
+    <div className=" bg-slate-900 p-4">
       {/* Header Container */}
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         
