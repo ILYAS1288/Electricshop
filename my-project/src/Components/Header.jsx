@@ -1,24 +1,23 @@
 import React from 'react';
-import { FaStore , FaProductHunt, FaShoppingCart, FaRegStar, FaCogs } from 'react-icons/fa';
+import { FaStore, FaProductHunt, FaShoppingCart, FaRegStar, FaCogs } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <div className=" bg-slate-900 p-4">
+    <div className="bg-slate-900 p-4">
       {/* Header Container */}
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap">
         
         {/* Logo or Shop Icon */}
-        <div className="text-white text-2xl font-bold flex items-center">
-        <FaStore className="mr-2 text-green-500" />
+        <div className="text-white text-2xl font-bold flex items-center mb-4 sm:mb-0">
+          <FaStore className="mr-2 text-green-500" />
           <span>ELECTRSHOP</span>
         </div>
 
-       
-        <div className="flex space-x-6 text-white text-lg">
-        <div className="flex items-center space-x-2">
-           
+        {/* Navigation Links */}
+        <div className="flex flex-wrap space-x-6 text-white text-lg mb-4 sm:mb-0">
+          <div className="flex items-center space-x-2">
             <span>Home</span>
-          </div> 
+          </div>
           <div className="flex items-center space-x-2">
             <FaProductHunt />
             <span>Product</span>
