@@ -7,12 +7,5 @@ export const Buy = () => {
     <div>Buy</div>
 
 
-
-
-
-
-
-
-    
   )
 }
