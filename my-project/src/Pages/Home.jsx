@@ -2,6 +2,24 @@ import React from 'react'
 
 import { FaStore } from 'react-icons/fa';
 export const Home = () => {
+
+  const handleBuyNow = () => {
+   
+    const fileUrl = "/path-to-your-file.pdf"; 
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "BuyFile.pdf"; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
+
+
+
+
+
   return (
 
     <div className='bg-slate-900 w-full sm:w-auto md:w-auto lg:w-full xl:w-full:'>
@@ -22,9 +40,12 @@ export const Home = () => {
       <p className="mt-2 text-slate-300">Innovation Headset to create the effect of presence immerses <br />
         you in the real world with a volume of 360° viewing angle.</p>
       <span className="text-2xl lg:text-4xl mt-1 font-bold text-white ">$1499</span>
-      <button className="mt-4 font-bold border text-blue-800 ml-1 border-blue-500 rounded-full px-6 py-2">
-        Buy Now
-      </button>
+      <button
+      className="mt-4 font-bold border text-blue-800 ml-1 border-blue-500 rounded-full px-6 py-2"
+      onClick={handleBuyNow}
+    >
+      Buy Now
+    </button>
         {/* Image Cards Section in Grid */}
       <div className="grid grid-cols-1 mt-5  sm:grid-cols-2 gap-4">
     {/* First Image Card */}
@@ -66,191 +87,104 @@ export const Home = () => {
 
 
 
-
-      <div>
-        <h1 className='text-white text-3xl'>Popular Products</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 mt-5 md:grid-cols-4 gap-4  justify-items-center">
-  {/* <!-- Card 1 --> */}
-  <div class="bg-white rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/4th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div>
-
-
-  {/* <!-- Card 2 --> */}
-  <div class="bg-white rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/5th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div>
-
-
-  {/* <!-- Card 3 --> */}
-  <div class="bg-white rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/6th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div>
-
-
-  {/* <!-- Card 4 --> */}
-  <div class="bg-white rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/7th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div>
-
-
-  {/* <!-- Card 5 --> */}
-  <div class="bg-white rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/8th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div>
-
-
-  {/* <!-- Card 6 --> */}
-  <div class="bg-white rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/9th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div>
-
-
-  {/* <!-- Card 7 --> */}
-  <div class="bg-white rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/10th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div>
-
-
-  {/* <!-- Card 8 --> */}
-  <div class="bg-white rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/11th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div>
-
-</div>
+<div className="p-6">
+      <h1 className="text-white text-3xl mb-6">Popular Products</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+        {/* Product Cards */}
+        {Array.from({ length: 8 }).map((_, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-lg p-4 w-full max-w-xs flex items-center"
+          >
+            <div className="flex flex-row justify-between items-center w-full">
+              {/* Product Details */}
+              <div className="flex flex-col">
+                <h1 className="text-black font-semibold text-sm">Playstation 6</h1>
+                <span className="text-black font-bold text-sm">$400</span>
+                <FaStore className="mr-2 text-green-500 mt-1" />
+              </div>
+              {/* Product Image */}
+              <img
+                src={`../../public/photo/${index + 4}th.png`} // Example dynamic path
+                alt="Product"
+                className="w-24 h-auto rounded-md mt-2"
+              />
+            </div>
+          </div>
+        ))}
       </div>
-
-<div className='bg-white grid grid-cols-1  pt-12 sm:grid-cols-2 mt-5 md:grid-cols-4 gap-4  justify-items-center'>
-<div className='ml-16 '>
-<h1 className='text-4xl lg:text-6xl font-bold'>Deals Of <br />
-The Day </h1>
-<p className='text-4xl lg:text-6xl mt-1 text-blue-700'>08:30:35</p>
-
-</div>
-
-<div class="bg-slate-900 rounded-lg shadow-lg mb-16 p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-blue-700 font-semibold text-sm">Playstation 6</h1>
-      <span class="text-blue-700 font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
     </div>
-    <img src="../../public/photo/11th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div> <div class="bg-slate-900 rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-blue-700 font-semibold text-sm">Playstation 6</h1>
-      <span class="text-blue-700 font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/5th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div> <div class="bg-slate-900 rounded-lg shadow-lg p-4 w-52 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-blue-700 font-semibold text-sm">Playstation 6</h1>
-      <span class="text-blue-700 font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/10th.png" alt="Image" class="w-32 h-auto rounded-md mt-2" />
-  </div>
-</div>
 
-</div>
+    <div className="bg-white p-6">
+      {/* Grid Container */}
+      <div className="grid grid-cols-1 pt-12 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+        {/* Text Section */}
+        <div className="sm:ml-8 text-center sm:text-left">
+          <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+            Deals Of <br />
+            The Day
+          </h1>
+          <p className="text-4xl lg:text-6xl mt-3 text-blue-700">
+            08:30:35
+          </p>
+        </div>
 
-<div className=''>
-<h1 className='text-white text-3xl lg:text-5xl pt-10 pl-12 '>New Arrivals</h1>
-<div className=' grid grid-cols-1  pt-12 sm:grid-cols-2 mt-5 md:grid-cols-4 gap-4  justify-items-center'>
-
-
-<div class="bg-white rounded-lg shadow-lg mb-16 p-4 w-64 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
+        {/* Product Cards */}
+        {Array.from({ length: 3 }).map((_, index) => (
+          <div
+            key={index}
+            className="bg-slate-900 rounded-lg shadow-lg p-4 w-full max-w-xs flex items-center"
+          >
+            <div className="flex flex-row justify-between items-center w-full">
+              {/* Product Details */}
+              <div className="flex flex-col">
+                <h1 className="text-blue-700 font-semibold text-sm">Playstation 6</h1>
+                <span className="text-blue-700 font-bold text-sm">$400</span>
+                <FaStore className="mr-2 text-green-500 mt-1" />
+              </div>
+              {/* Product Image */}
+              <img
+                src={`../../public/photo/${index + 5}th.png`} // Replace with actual image paths
+                alt={`Product ${index + 1}`}
+                className="w-24 h-auto rounded-md mt-2"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-    <img src="../../public/photo/11th.png" alt="Image" class="w-32 h-auto rounded-md mb-10" />
-  </div>
-</div> <div class="bg-white rounded-lg shadow-lg p-4 w-64 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/12th.png" alt="Image" class="w-32 h-auto rounded-md mb-10" />
-  </div>
-</div> <div class="bg-white rounded-lg shadow-lg p-4 w-64 h-40 flex items-center">
-  <div class="flex flex-row justify-between items-center w-full">
-    <div class="flex flex-col">
-      <h1 class="text-black font-semibold text-sm">Playstation 6</h1>
-      <span class="text-black font-bold text-sm">$400</span>
-      <FaStore className="mr-2 text-green-500" />
-    </div>
-    <img src="../../public/photo/13.png" alt="Image" class="w-32 h-auto rounded-md mb-10" />
-  </div>
-</div>
+    <div className="bg-slate-900 py-10">
+      {/* Section Title */}
+      <h1 className="text-white text-3xl lg:text-5xl font-bold pl-6 sm:pl-12">
+        New Arrivals
+      </h1>
 
-</div>
-</div>
+      {/* Product Grid */}
+      <div className="grid grid-cols-1 pt-12 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+        {/* Product Cards */}
+        {Array.from({ length: 3 }).map((_, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-lg p-4 w-full max-w-xs flex items-center"
+          >
+            <div className="flex flex-row justify-between items-center w-full">
+              {/* Product Details */}
+              <div className="flex flex-col">
+                <h1 className="text-black font-semibold text-sm">Playstation 6</h1>
+                <span className="text-black font-bold text-sm">$400</span>
+                <FaStore className="text-green-500 mt-2" />
+              </div>
+              {/* Product Image */}
+              <img
+                src={`../../public/photo/${index + 9}th.png`} // Replace with actual image paths
+                alt={`Product ${index + 1}`}
+                className="w-24 h-auto rounded-md mb-2"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
 
 
 
