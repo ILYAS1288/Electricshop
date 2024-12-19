@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 export const Buy = () => {
   const [quantity, setQuantity] = useState(1);
+  const pricePerItem = 1299.99;
 
   const handleAddToCart = () => {
     setQuantity(prevQuantity => prevQuantity + 1);
@@ -9,6 +10,10 @@ export const Buy = () => {
 
   const handleRemoveFromCart = () => {
     setQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+  };
+
+  const calculateTotal = () => {
+    return (quantity * pricePerItem).toFixed(2);
   };
 
   return (
@@ -25,7 +30,7 @@ export const Buy = () => {
               Experience blazing-fast performance with the latest processors, high-resolution display, and extended battery life. Perfect for gaming, productivity, and creativity.
             </p>
             <div className="mt-4">
-              <span className="text-xl font-semibold text-green-500">$1299.99</span>
+              <span className="text-xl font-semibold text-green-500">${pricePerItem}</span>
               <span className="text-sm text-gray-500 ml-2 line-through">$1499.99</span>
             </div>
             <div className="mt-6">
@@ -58,6 +63,23 @@ export const Buy = () => {
             <button className="mt-4 w-full bg-gray-200 text-gray-800 py-2 px-4 rounded hover:bg-gray-300 transition-all duration-300">
               Buy Now
             </button>
+
+            {/* Bill Section */}
+            <div className="mt-8 p-4 bg-gray-100 rounded shadow-md">
+              <h3 className="text-lg font-bold text-gray-800">Billing Summary</h3>
+              <div className="flex justify-between mt-4">
+                <span className="text-gray-700">Quantity:</span>
+                <span className="text-gray-800">{quantity}</span>
+              </div>
+              <div className="flex justify-between mt-2">
+                <span className="text-gray-700">Price per item:</span>
+                <span className="text-gray-800">${pricePerItem}</span>
+              </div>
+              <div className="flex justify-between mt-2 font-bold">
+                <span className="text-gray-700">Total:</span>
+                <span className="text-gray-800">${calculateTotal()}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
