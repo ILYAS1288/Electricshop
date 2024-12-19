@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FaStore } from 'react-icons/fa';
+import { FaShoppingCart } from 'react-icons/fa';
 export const Home = () => {
 
   const handleBuyNow = () => {
@@ -53,7 +53,7 @@ export const Home = () => {
       <div className="flex flex-col justify-start">
         <h1 className="text-black font-semibold text-sm">Gear VR</h1>
         <span className="text-black font-bold text-sm">$699</span>
-        <FaStore className="mr-2 text-green-500" />
+       <FaShoppingCart  className="mr-2 text-green-500" />
       </div>
       <img
         src="../../public/photo/2nd.png"
@@ -67,7 +67,7 @@ export const Home = () => {
       <div className="flex flex-col justify-start">
         <h1 className="text-black font-semibold text-sm">Gear VR</h1>
         <span className="text-black font-bold text-sm">$699</span>
-        <FaStore className="mr-2 text-green-500" />
+        <FaShoppingCart  className="mr-2 text-green-500" />
       </div>
       <img
         src="../../public/photo/3rd.png"
@@ -101,7 +101,7 @@ export const Home = () => {
               <div className="flex flex-col">
                 <h1 className="text-black font-semibold text-sm">Playstation 6</h1>
                 <span className="text-black font-bold text-sm">$400</span>
-                <FaStore className="mr-2 text-green-500 mt-1" />
+              <FaShoppingCart  className="mr-2 text-green-500 mt-1 hover:text-blue-500 transition" />
               </div>
               {/* Product Image */}
               <img
@@ -140,7 +140,7 @@ export const Home = () => {
               <div className="flex flex-col">
                 <h1 className="text-blue-700 font-semibold text-sm">Playstation 6</h1>
                 <span className="text-blue-700 font-bold text-sm">$400</span>
-                <FaStore className="mr-2 text-green-500 mt-1" />
+               <FaShoppingCart  className="mr-2 text-green-500 mt-1 hover:text-white transition" />
               </div>
               {/* Product Image */}
               <img
@@ -172,7 +172,7 @@ export const Home = () => {
               <div className="flex flex-col">
                 <h1 className="text-black font-semibold text-sm">Playstation 6</h1>
                 <span className="text-black font-bold text-sm">$400</span>
-                <FaStore className="text-green-500 mt-2" />
+                <FaShoppingCart  className="text-green-500 mt-2 hover:text-red-600 transition" />
               </div>
               {/* Product Image */}
               <img

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaStore, FaProductHunt, FaShoppingCart, FaRegStar, FaCogs } from 'react-icons/fa';
+import {  FaProductHunt, FaShoppingCart, FaRegStar, FaCogs } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
         
         {/* Logo or Shop Icon */}
         <div className="text-white text-2xl font-bold flex items-center mb-4 sm:mb-0">
-          <FaStore className="mr-2 text-green-500" />
+          <FaShoppingCart  className="mr-2 text-green-500" />
           <span>ELECTRSHOP</span>
         </div>
 
