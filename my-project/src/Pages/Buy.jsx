@@ -16,6 +16,7 @@ export const Buy = () => {
     return (quantity * pricePerItem).toFixed(2);
   };
 
+  
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center py-10">
       <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">

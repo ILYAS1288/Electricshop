@@ -47,6 +47,7 @@ export const Product = () => {
             </div>
           </div>
 
+
           {/* Product 3 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
             <img

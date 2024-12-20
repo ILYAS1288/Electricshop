@@ -18,6 +18,7 @@ const Feature = () => {
               Get your products delivered quickly with our reliable shipping service.
             </p>
           </div>
+          
 
           {/* Feature 2 */}
           <div className="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg">
