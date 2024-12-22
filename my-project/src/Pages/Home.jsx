@@ -15,11 +15,6 @@ export const Home = () => {
   };
 
 
-
-
-
-
-
   return (
 
     <div className='bg-slate-900 w-full sm:w-auto md:w-auto lg:w-full xl:w-full:'>

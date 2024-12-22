@@ -50,6 +50,8 @@ export const Product = () => {
 
           {/* Product 3 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+           
+           
             <img
               src="https://img.freepik.com/free-photo/headphones-laptop-home_23-2149551432.jpg?ga=GA1.1.1014938941.1719385327&semt=ais_hybrid"
               alt="Product 3"
