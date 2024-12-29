@@ -43,7 +43,6 @@ export const Home = () => {
     </button>
         {/* Image Cards Section in Grid */}
       <div className="grid grid-cols-1 mt-5  sm:grid-cols-2 gap-4">
-    {/* First Image Card */}
     <div className="bg-white rounded-lg shadow-lg p-4 flex items-center justify-between">
       <div className="flex flex-col justify-start">
         <h1 className="text-black font-semibold text-sm">Gear VR</h1>
