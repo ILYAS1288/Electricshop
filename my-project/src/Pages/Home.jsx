@@ -22,7 +22,7 @@ export const Home = () => {
 <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 p-4">
   {/* Main Section with Image and Text */}
   <div className="flex flex-col lg:flex-row   items-center lg:items-start">
-    {/* Image on the left */}
+    {/* Image  left */}
     <img
   src="../../public/photo/1st.png"
   alt="Image"

@@ -8,7 +8,7 @@ const Feature = () => {
           Why Choose ELECTRSHOP?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Feature 1 */}
+          {/* Feature one */}
           <div className="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg">
             <div className="bg-blue-500 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
               <i className="fas fa-bolt text-2xl"></i>
@@ -20,7 +20,7 @@ const Feature = () => {
           </div>
           
 
-          {/* Feature 2 */}
+          {/* Feature two */}
           <div className="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg">
             <div className="bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
               <i className="fas fa-shield-alt text-2xl"></i>
@@ -31,7 +31,7 @@ const Feature = () => {
             </p>
           </div>
 
-          {/* Feature 3 */}
+          {/* Feature three */}
           <div className="flex flex-col items-center text-center bg-white p-6 shadow-lg rounded-lg">
             <div className="bg-yellow-500 text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
               <i className="fas fa-headset text-2xl"></i>

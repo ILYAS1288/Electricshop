@@ -9,7 +9,7 @@ export const Product = () => {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Product 1 */}
+          {/* Product one */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
             <img
               src="https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437111.jpg?ga=GA1.1.1014938941.1719385327&semt=ais_hybrid"
@@ -28,7 +28,7 @@ export const Product = () => {
             </div>
           </div>
 
-          {/* Product 2 */}
+          {/* Product two */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
             <img
               src="https://img.freepik.com/free-photo/high-angle-gaming-setup-indoors_23-2149829123.jpg?ga=GA1.1.1014938941.1719385327&semt=ais_hybrid"
@@ -48,7 +48,7 @@ export const Product = () => {
           </div>
 
 
-          {/* Product 3 */}
+          {/* Product three */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
            
            
